@@ -1,0 +1,103 @@
+{
+  "hero": {
+    "title": "Bitcoin: El Manifiesto de la Libertad",
+    "subtitle": "Dinero para un mundo libre. La primera red monetaria global, descentralizada y neutral.",
+    "cta": "Explora el Futuro"
+  },
+  "sections": [
+    {
+      "id": "historia",
+      "title": "Historia de una Revolución",
+      "description": "Desde la publicación del Whitepaper por Satoshi Nakamoto hasta su adopción como moneda de curso legal.",
+      "items": [
+        {
+          "year": "2008",
+          "title": "El Whitepaper",
+          "content": "Satoshi Nakamoto publica 'Bitcoin: A Peer-to-Peer Electronic Cash System' en una lista de correo de criptografía."
+        },
+        {
+          "year": "2009",
+          "title": "Bloque Génesis",
+          "content": "El 3 de enero se mina el primer bloque. Satoshi incluye el titular: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks'."
+        },
+        {
+          "year": "2010",
+          "title": "Bitcoin Pizza",
+          "content": "Laszlo Hanyecz realiza la primera compra real con Bitcoin: 10,000 BTC por dos pizzas."
+        },
+        {
+          "year": "2013",
+          "title": "La primera burbuja de los $1,000",
+          "content": "Bitcoin alcanza los mil dólares por primera vez, atrayendo la atención del mundo financiero."
+        },
+        {
+          "year": "2021",
+          "title": "El Salvador",
+          "content": "El Salvador se convierte en el primer país del mundo en adoptar Bitcoin como moneda de curso legal."
+        }
+      ]
+    },
+    {
+      "id": "naturaleza",
+      "title": "La Triple Naturaleza",
+      "items": [
+        {
+          "title": "Reserva de Valor",
+          "icon": "gold",
+          "content": "Con un suministro limitado de 21 millones, Bitcoin es la forma de dinero más escasa jamás creada, protegiendo el poder adquisitivo frente a la inflación.",
+          "detailedContent": "A diferencia del dinero fiduciario, que puede ser impreso sin límite por los bancos centrales, la escasez de Bitcoin está programada en su código. Solo existirán 21 millones de monedas. Esta escasez matemática y verificable lo convierte en 'oro digital', un activo ideal para preservar el valor a largo plazo, inmune a la devaluación por inflación."
+        },
+        {
+          "title": "Medio de Intercambio",
+          "icon": "payment",
+          "content": "Permite enviar cualquier cantidad de valor a cualquier parte del mundo, de forma instantánea y sin intermediarios.",
+          "detailedContent": "La red Bitcoin funciona 24/7 sin fronteras. Permite transferencias directas (peer-to-peer) entre usuarios, eliminando la necesidad de bancos que pueden censurar transacciones o imponer altas comisiones. Aunque la capa base no es ideal para un café, soluciones como la Lightning Network ya permiten pagos instantáneos y casi gratuitos."
+        },
+        {
+          "title": "Instrumento de Libertad",
+          "icon": "liberty",
+          "content": "Es dinero resistente a la censura. Nadie puede bloquear tus transacciones ni confiscar tus ahorros sin tus claves privadas.",
+          "detailedContent": "Bitcoin te da soberanía sobre tu patrimonio. En regímenes autoritarios o economías inestables, los gobiernos pueden congelar cuentas bancarias o devaluar la moneda. Con Bitcoin, mientras tú y solo tú controles tus claves privadas, nadie puede acceder, mover o confiscar tus fondos. Es el banco en tu bolsillo."
+        }
+      ]
+    },
+    {
+      "id": "tecnologia",
+      "title": "La Red que lo Soporta",
+      "items": [
+        {
+          "title": "Blockchain",
+          "content": "Un libro de contabilidad público, inmutable y distribuido entre miles de nodos en todo el planeta.",
+          "detailedContent": "Imagina un libro de contabilidad digital que, en lugar de estar en un solo banco, está copiado y sincronizado en miles de ordenadores a la vez. Cada 'página' (bloque) está matemáticamente encadenada a la anterior, haciendo imposible alterar el pasado sin ser detectado. Es la fuente de la verdad de la red."
+        },
+        {
+          "title": "Minería (PoW)",
+          "content": "El mecanismo de Proof of Work asegura la red mediante potencia de cómputo, convirtiendo energía en seguridad digital.",
+          "detailedContent": "La Prueba de Trabajo es el mecanismo que alinea incentivos y seguridad. Los 'mineros' compiten para resolver un complejo puzzle matemático. El primero en resolverlo añade el siguiente bloque a la cadena y es recompensado con nuevos bitcoins. Este proceso requiere una inmensa cantidad de energía, lo que hace que atacar la red sea económicamente inviable."
+        },
+        {
+          "title": "Lightning Network",
+          "content": "Una segunda capa (Layer 2) que permite pagos instantáneos y casi gratuitos, escalando Bitcoin para miles de millones de personas.",
+          "detailedContent": "Para solucionar la escalabilidad de la capa base, la Lightning Network crea canales de pago privados entre usuarios. Las transacciones dentro de estos canales son casi instantáneas y muy baratas. Solo la apertura y el cierre del canal se registran en la blockchain principal. Es la tecnología que permite que Bitcoin se use para pagos cotidianos."
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    { 
+      "term": "Satoshi Nakamoto", 
+      "definition": "El seudónimo del creador o creadores anónimos de Bitcoin.",
+      "detailedContent": "Satoshi Nakamoto publicó el whitepaper de Bitcoin en 2008 y minó el primer bloque en 2009. Se comunicó a través de foros y correos electrónicos hasta 2011, momento en el que desapareció, dejando el proyecto en manos de la comunidad. Su identidad real sigue siendo uno de los mayores misterios de la tecnología."
+    },
+    { 
+      "term": "Halving", 
+      "definition": "Evento que ocurre cada 4 años donde la emisión de nuevos bitcoins se reduce a la mitad.",
+      "detailedContent": "El halving es un evento programado en el código de Bitcoin que ocurre cada 210,000 bloques (aproximadamente cada 4 años). Reduce a la mitad la recompensa que reciben los mineros por validar un bloque. Este mecanismo de 'shock de oferta' es fundamental para la política monetaria predecible y deflacionaria de Bitcoin, y ha coincidido históricamente con importantes ciclos alcistas."
+    },
+    { 
+      "term": "Clave Privada", 
+      "definition": "El código secreto que te permite gastar tus bitcoins. Quien posee la clave, posee los fondos.",
+      "detailedContent": "Una clave privada es una larga cadena de números y letras que funciona como la 'contraseña maestra' de tus bitcoins. Es la prueba criptográfica de que eres el dueño de los fondos y te da la autoridad para gastarlos. De ahí la frase 'Not your keys, not your coins'. Si pierdes tu clave privada, pierdes tus bitcoins para siempre. Si alguien la roba, puede robar tus fondos."
+    }
+  ]
+}

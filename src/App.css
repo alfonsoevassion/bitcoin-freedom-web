@@ -1,0 +1,495 @@
+:root {
+  --bitcoin-orange: #F7931A;
+  --dark-bg: #000000;
+  --light-text: #E5E5E5;
+  --gray-text: #A0A0A0;
+  --card-bg: #111111;
+  --nav-height: 80px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+header {
+  height: var(--nav-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid #222;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--bitcoin-orange);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--light-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--bitcoin-orange);
+}
+
+section {
+  padding: 100px 5%;
+  min-height: 50vh;
+}
+
+.section-header {
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--bitcoin-orange);
+}
+
+.section-desc {
+  font-size: 1.2rem;
+  color: var(--gray-text);
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle at center, #1a1a1a 0%, #000 70%);
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(45deg, #fff, var(--bitcoin-orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: var(--gray-text);
+  max-width: 700px;
+  margin-bottom: 2.5rem;
+}
+
+.cta-button {
+  background-color: var(--bitcoin-orange);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(247, 147, 26, 0.3);
+}
+
+/* Grid layout for automated sections */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 15px;
+  border: 1px solid #222;
+  transition: border-color 0.3s;
+}
+
+.card:hover {
+  border-color: var(--bitcoin-orange);
+}
+
+.card h3 {
+  color: var(--bitcoin-orange);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/* History Timeline */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.year {
+  font-weight: 800;
+  color: var(--bitcoin-orange);
+  font-size: 1.25rem;
+  min-width: 80px;
+}
+
+/* Live Stats Styles */
+.live-stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.stat-card {
+  background: linear-gradient(145deg, #111111, #0a0a0a);
+  border: 1px solid #333;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  min-width: 220px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+  border-color: var(--bitcoin-orange);
+}
+
+.stat-label {
+  color: var(--gray-text);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  color: var(--bitcoin-orange);
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+}
+
+.stat-sub {
+  color: #555;
+  font-size: 0.8rem;
+}
+
+.loading {
+  color: var(--bitcoin-orange);
+  font-style: italic;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Freedom Calculator Styles */
+.calculator-container {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 3rem;
+  border: 1px solid #333;
+  margin-top: 2rem;
+}
+
+.calc-inputs {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+.input-group label {
+  color: var(--bitcoin-orange);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.input-group input[type="number"] {
+  background: #1a1a1a;
+  border: 1px solid #444;
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.years-display {
+  margin-top: 0.5rem;
+  font-weight: 800;
+  color: var(--light-text);
+  text-align: right;
+}
+
+.calc-results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.result-card {
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.result-card.fiat {
+  background: #2a1010;
+  border: 1px solid #5a1010;
+}
+
+.result-card.btc {
+  background: #0d2a10;
+  border: 1px solid #1a5a10;
+}
+
+.result-card h4 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: var(--gray-text);
+}
+
+.result-value {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.fiat .result-value { color: #ff4d4d; }
+.btc .result-value { color: #4dff4d; }
+
+.result-card p {
+  font-size: 0.95rem;
+}
+
+.result-card small {
+  display: block;
+  margin-top: 1.5rem;
+  color: #444;
+  font-size: 0.7rem;
+}
+
+/* Whitepaper Viewer Styles */
+.wp-viewer {
+  display: flex;
+  gap: 3rem;
+  background: #050505;
+  border: 1px solid #222;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 500px;
+  margin-top: 2rem;
+}
+
+.wp-sidebar {
+  width: 280px;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #222;
+}
+
+.wp-nav-item {
+  background: none;
+  border: none;
+  color: var(--gray-text);
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+  border-bottom: 1px solid #222;
+}
+
+.wp-nav-item:hover {
+  background: #1a1a1a;
+  color: var(--bitcoin-orange);
+}
+
+.wp-nav-item.active {
+  background: var(--bitcoin-orange);
+  color: white;
+}
+
+.wp-content-area {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow-y: auto;
+}
+
+.wp-card {
+  padding: 2rem;
+  border-radius: 12px;
+  position: relative;
+}
+
+.wp-card.original {
+  background: #111;
+  border-left: 4px solid var(--gray-text);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.wp-card.simplified {
+  background: rgba(247, 147, 26, 0.05);
+  border-left: 4px solid var(--bitcoin-orange);
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background: #222;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.wp-card.simplified .badge {
+  color: var(--bitcoin-orange);
+}
+
+/* Modal Styles */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background: var(--card-bg);
+  padding: 3rem;
+  border-radius: 20px;
+  border: 1px solid #333;
+  width: 90%;
+  max-width: 700px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  animation: slideIn 0.4s ease-out;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: var(--gray-text);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.modal-close:hover {
+  color: var(--bitcoin-orange);
+}
+
+.modal-content h2 {
+  color: var(--bitcoin-orange);
+  margin-bottom: 1rem;
+}
+
+.modal-summary {
+  color: var(--gray-text);
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.modal-content hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin-bottom: 2rem;
+}
+
+.modal-detailed-content p {
+  line-height: 1.8;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 900px) {
+  .wp-viewer { flex-direction: column; height: auto; }
+  .wp-sidebar { width: 100%; flex-direction: row; overflow-x: auto; }
+  .wp-nav-item { min-width: 150px; }
+}
+
+@media (max-width: 768px) {
+  .calc-results { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 2.5rem; }
+  header nav { display: none; }
+}

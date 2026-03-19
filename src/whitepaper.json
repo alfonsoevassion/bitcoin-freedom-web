@@ -1,0 +1,42 @@
+{
+  "title": "Bitcoin: Un Sistema de Efectivo Electrónico Usuario-a-Usuario",
+  "author": "Satoshi Nakamoto (2008)",
+  "sections": [
+    {
+      "id": "wp-intro",
+      "title": "1. Introducción",
+      "original": "Una versión puramente electrónica de efectivo permitiría que los pagos en línea se envíen directamente de una parte a otra sin pasar por una institución financiera.",
+      "simple": "Bitcoin nace para eliminar a los bancos de la ecuación. Imagina enviar dinero por internet como si entregaras un billete en mano: sin permisos, sin esperas y sin intermediarios."
+    },
+    {
+      "id": "wp-transactions",
+      "title": "2. Transacciones",
+      "original": "Definimos una moneda electrónica como una cadena de firmas digitales. Cada propietario transfiere la moneda al siguiente firmando digitalmente un hash de la transacción previa.",
+      "simple": "Un Bitcoin no es un 'archivo', es una historia de quién se lo pasó a quién. La seguridad viene de firmas matemáticas que nadie puede falsificar."
+    },
+    {
+      "id": "wp-timestamp",
+      "title": "3. Servidor de Marcas de Tiempo",
+      "original": "La solución que proponemos comienza con un servidor de marcas de tiempo. Este funciona tomando un hash de un bloque de ítems para ser fechados y publicando ampliamente el hash.",
+      "simple": "Para evitar que alguien gaste el mismo dinero dos veces, la red se pone de acuerdo en 'cuándo' ocurrió cada cosa, creando un orden inmutable en el tiempo."
+    },
+    {
+      "id": "wp-pow",
+      "title": "4. Prueba de Trabajo (PoW)",
+      "original": "Para implementar un servidor de marcas de tiempo distribuido sobre una base usuario-a-usuario, necesitaremos usar un sistema de prueba de trabajo similar al Hashcash de Adam Back.",
+      "simple": "La seguridad no depende de una persona, sino de energía matemática. Los mineros deben 'trabajar' para validar bloques, haciendo que atacar la red sea astronómicamente caro."
+    },
+    {
+      "id": "wp-network",
+      "title": "5. La Red",
+      "original": "Los pasos para ejecutar la red son: 1) Las nuevas transacciones se transmiten a todos los nodos. 2) Cada nodo agrupa las nuevas transacciones en un bloque...",
+      "simple": "Bitcoin es una orquesta sin director. Miles de ordenadores en todo el mundo se vigilan unos a otros siguiendo reglas automáticas que nadie puede cambiar solo."
+    },
+    {
+      "id": "wp-incentive",
+      "title": "6. Incentivos",
+      "original": "Por convención, la primera transacción en un bloque es una transacción especial que inicia una nueva moneda propiedad del creador del bloque.",
+      "simple": "Los mineros reciben Bitcoins nuevos como recompensa por proteger la red. Esto alinea el egoísmo individual con la seguridad de todos: sale más a cuenta proteger Bitcoin que atacarlo."
+    }
+  ]
+}

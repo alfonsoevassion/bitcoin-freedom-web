@@ -1,17 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import shapesData from './shapes.json';
-
-interface Point {
-  0: number;
-  1: number;
-}
-
-interface Shape {
-  id: string;
-  name: string;
-  description: string;
-  polygons: number[][][];
-}
 
 const FragmentedShape: React.FC = () => {
   const [currentShapeIndex, setCurrentShapeIndex] = useState(0);

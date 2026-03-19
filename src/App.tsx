@@ -80,7 +80,7 @@ const App: React.FC = () => {
         <section id="home" className="hero">
           <h1>{content.hero.title}</h1>
           <p>{content.hero.subtitle}</p>
-          <a href="#historia" className="cta-button">{content.hero.cta}</a>
+          <a href="#evolucion" className="cta-button">{content.hero.cta}</a>
           <LiveStats />
         </section>
 

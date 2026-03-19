@@ -5,6 +5,7 @@ import LiveStats from './LiveStats';
 import FreedomCalculator from './FreedomCalculator';
 import WhitepaperViewer from './WhitepaperViewer';
 import Modal from './Modal';
+import FragmentedShape from './FragmentedShape';
 
 // --- Interfaces ---
 interface ContentItem {
@@ -63,6 +64,7 @@ const App: React.FC = () => {
         </a>
         <nav>
           <ul>
+            <li><a href="#evolucion">Evolución</a></li>
             <li><a href="#historia">Historia</a></li>
             <li><a href="#naturaleza">Naturaleza</a></li>
             <li><a href="#tecnologia">Tecnología</a></li>
@@ -80,6 +82,15 @@ const App: React.FC = () => {
           <p>{content.hero.subtitle}</p>
           <a href="#historia" className="cta-button">{content.hero.cta}</a>
           <LiveStats />
+        </section>
+
+        {/* --- Evolution Prototype --- */}
+        <section id="evolucion">
+          <div className="section-header">
+            <h2>Evolución de la Forma</h2>
+            <p className="section-desc">Bitcoin no es solo código; es una idea que transmuta para servir a la humanidad.</p>
+          </div>
+          <FragmentedShape />
         </section>
 
         {content.sections.map((section) => (

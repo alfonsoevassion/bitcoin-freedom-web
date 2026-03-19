@@ -488,6 +488,69 @@ section {
   .wp-nav-item { min-width: 150px; }
 }
 
+/* Evolution Section Styles */
+.evolution-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  background: radial-gradient(circle at center, #111 0%, #000 100%);
+  padding: 4rem;
+  border-radius: 30px;
+  border: 1px solid #222;
+  margin-top: 2rem;
+}
+
+.shape-display {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.polygons-wrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.fragment {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: clip-path 0.8s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.8s ease;
+  will-change: clip-path;
+}
+
+.shape-info {
+  flex: 0.8;
+  text-align: left;
+}
+
+.shape-info h3 {
+  font-size: 2.5rem;
+  color: var(--bitcoin-orange);
+  margin-bottom: 1.5rem;
+}
+
+.shape-info p {
+  font-size: 1.2rem;
+  color: var(--gray-text);
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 900px) {
+  .evolution-container {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+  .shape-info { text-align: center; }
+  .polygons-wrapper { width: 300px; height: 300px; }
+}
+
 @media (max-width: 768px) {
   .calc-results { grid-template-columns: 1fr; }
   .hero { /* Applying the fix here */
